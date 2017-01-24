@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <span class="first"> 
+			.NET CORE EVENT (AZURE RELAY)
+			<span class="icon-edit new"></span>
+    </span>
+    <ul id="tweetsTimeLine" class="timeline" data-bind="foreach: tweets">
+        <li>
+            <div class="avatar">
+                <img data-bind="attr: { src: UrlUserImage }">
+            </div>
+            <div class="bubble-container">
+                <div class="bubble" data-bind="text: Text">
+                </div>
+                <div class="arrow"></div>
+            </div>
+        </li>
+    </ul>
+</body>
+<script>
+    var relayToken = '{{relayToken}}';
+</script>
+<script src="js/app/bundle.js"></script>
+</html>
